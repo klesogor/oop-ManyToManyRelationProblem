@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EntityTestScaffolding
 {
-    public class Class1
+    public class Entity
     {
+        public readonly Guid id;
     }
 }
