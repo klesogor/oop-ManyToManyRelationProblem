@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntityTestScaffolding.Specification
 {
-    class ByIdSpecification : ISpecification<Entity>
+    public class ByIdSpecification : ISpecification<Entity>
     {
         private readonly Guid _id;
 

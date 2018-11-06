@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntityTestScaffolding.Specification
 {
-    class GenericSpecification<T> : ISpecification<T>
+    public class GenericSpecification<T> : ISpecification<T>
     {
         private readonly Func<T,bool> cb;
 

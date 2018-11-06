@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntityTestScaffolding.Relations
 {
-    class ManyToManyElement<M,O> : Entity where M : Entity where O : Entity 
+    public class ManyToManyElement<M,O> : Entity where M : Entity where O : Entity 
     {
         //I was really tired, so no more abstractions today, folks. I really should have
         //implemented many to one and one to one, but maybe i would do it later(never)
