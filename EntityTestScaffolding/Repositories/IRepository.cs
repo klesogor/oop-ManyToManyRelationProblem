@@ -11,7 +11,7 @@ namespace EntityTestScaffolding.Repositories
     {
         IEnumerable<T> GetAll();
 
-        IEnumerable<T> GetBySpecifications(params ISpecification<T>[] specifications);
+        IEnumerable<T> GetBySpecification(ISpecification<T> specification);
 
         T GetById(Guid guid);
 

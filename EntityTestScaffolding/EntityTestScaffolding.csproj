@@ -43,9 +43,12 @@
   <ItemGroup>
     <Compile Include="Entity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relations\ManyToMany.cs" />
+    <Compile Include="Relations\ManyToManyElement.cs" />
     <Compile Include="Repositories\InMemoryRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Specification\ByIdSpecification.cs" />
+    <Compile Include="Specification\GenericSpecification.cs" />
     <Compile Include="Specification\ISpecification.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

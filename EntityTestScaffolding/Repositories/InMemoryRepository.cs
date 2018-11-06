@@ -7,7 +7,7 @@ using EntityTestScaffolding.Specification;
 
 namespace EntityTestScaffolding.Repositories
 {
-    class InMemoryRepository<T> : IRepository<T>
+    class InMemoryRepository<T> : IRepository<T> where T : Entity
     {
         public static IRepository<T> GetInstance()
         {
@@ -39,12 +39,13 @@ namespace EntityTestScaffolding.Repositories
 
         public T GetById(Guid guid)
         {
-            
+            var spec = new ByIdSpecification(guid);
+            return _repo.Where(x => spec.SatisfiedBy(x)).First();
         }
 
-        public IEnumerable<T> GetBySpecifications(params ISpecification<T>[] specifications)
+        public IEnumerable<T> GetBySpecification(ISpecification<T> specification)
         {
-            throw new NotImplementedException();
+            return 
         }
 
         public void Save(T entity)

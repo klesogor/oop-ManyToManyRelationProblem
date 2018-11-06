@@ -9,5 +9,10 @@ namespace EntityTestScaffolding
     public class Entity
     {
         public readonly Guid id;
+
+        public Entity()
+        {
+            id = Guid.NewGuid();
+        }
     }
 }
